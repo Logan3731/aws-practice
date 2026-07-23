@@ -1,0 +1,102 @@
+[
+  {
+    "date": "2026-07-22",
+    "weight": 70.5,
+    "height": 175.0,
+    "systolic": 118,
+    "diastolic": 78,
+    "blood_sugar": 95,
+    "steps": 0,
+    "sleep_hours": 0.0,
+    "memo": "",
+    "id": 1,
+    "bmi": 23.0,
+    "bmi_category": "과체중",
+    "bp_category": "정상",
+    "sugar_category": "정상",
+    "warnings": []
+  },
+  {
+    "date": "string",
+    "weight": 95.0,
+    "height": 180.0,
+    "systolic": 0,
+    "diastolic": 0,
+    "blood_sugar": 0,
+    "steps": 0,
+    "sleep_hours": 0.0,
+    "memo": "",
+    "id": 2,
+    "bmi": 29.3,
+    "bmi_category": "비만",
+    "bp_category": "정상",
+    "sugar_category": "정상",
+    "activity_category": "부족",
+    "warnings": [
+      "BMI 비만 상태입니다. 체중 관리가 필요합니다.",
+      "일일 활동량이 부족합니다. 걷기 운동을 권장합니다."
+    ]
+  },
+  {
+    "date": "string",
+    "weight": 95.0,
+    "height": 180.0,
+    "systolic": 0,
+    "diastolic": 0,
+    "blood_sugar": 0,
+    "steps": 0,
+    "sleep_hours": 0.0,
+    "memo": "",
+    "id": 3,
+    "bmi": 29.3,
+    "bmi_category": "비만",
+    "bp_category": "정상",
+    "sugar_category": "정상",
+    "activity_category": "부족",
+    "warnings": [
+      "BMI 비만 상태입니다. 체중 관리가 필요합니다.",
+      "일일 활동량이 부족합니다. 걷기 운동을 권장합니다."
+    ]
+  },
+  {
+    "date": "2026-07-22",
+    "weight": 70.0,
+    "height": 175.0,
+    "systolic": 115,
+    "diastolic": 75,
+    "blood_sugar": 90,
+    "steps": 3000,
+    "sleep_hours": 0.0,
+    "memo": "",
+    "id": 4,
+    "bmi": 22.9,
+    "bmi_category": "정상",
+    "bp_category": "정상",
+    "sugar_category": "정상",
+    "activity_category": "부족",
+    "warnings": [
+      "일일 활동량이 부족합니다. 걷기 운동을 권장합니다."
+    ]
+  },
+  {
+    "date": "2026-07-23",
+    "weight": 70.0,
+    "height": 175.0,
+    "systolic": 115,
+    "diastolic": 75,
+    "blood_sugar": 90,
+    "steps": 8000,
+    "sleep_hours": 5.5,
+    "memo": "",
+    "id": 5,
+    "bmi": 22.9,
+    "bmi_category": "정상",
+    "bp_category": "정상",
+    "sugar_category": "정상",
+    "activity_category": "적정",
+    "sleep_category": "수면 부족",
+    "warnings": [
+      "권장 수면시간(7~9시간)보다 적게 잤습니다. 충분한 휴식이 필요합니다."
+    ]
+  }
+]
