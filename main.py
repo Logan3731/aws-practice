@@ -34,7 +34,8 @@ def verify_password(plain_password, hashed_password):
 
 
 def get_password_hash(password):
-    return pwd_context.hash(password)
+    # bcrypt의 72바이트 제한을 피하기 위해 앞의 72자만 잘라서 해싱
+    return pwd_context.hash(password[:72])
 
 
 def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
