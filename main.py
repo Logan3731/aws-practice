@@ -30,12 +30,14 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="login")
 
 # --- [유틸리티 함수: 비밀번호 암호화 및 토큰] ---
 def verify_password(plain_password, hashed_password):
-    return pwd_context.verify(plain_password, hashed_password)
-
+    # bcrypt 72바이트 제한 처리
+    truncated_password = plain_password.encode('utf-8')[:72].decode('utf-8', errors='ignore')
+    return pwd_context.verify(truncated_password, hashed_password)
 
 def get_password_hash(password):
-    # bcrypt의 72바이트 제한을 피하기 위해 앞의 72자만 잘라서 해싱
-    return pwd_context.hash(password[:72])
+    # bcrypt 72바이트 제한 처리
+    truncated_password = password.encode('utf-8')[:72].decode('utf-8', errors='ignore')
+    return pwd_context.hash(truncated_password)
 
 
 def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
